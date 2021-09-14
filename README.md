@@ -1,7 +1,7 @@
 
 # Projeto do Checkpoint
 
-[Site]
+[Site] https://noubarijou.github.io/1oCheckPointDeFront2/
 
 - Entrega: Individual
 - Tema em grupo: Código Base

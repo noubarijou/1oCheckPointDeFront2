@@ -1,0 +1,99 @@
+/* Responsividade para telas com largura máxima de 1440px*/
+/* em telas de até 1024px de largura, a tela aceitará até 3 cards por linha, os forms de criação de card e de contato tem tamanho alterado*/
+
+@media (max-width: 1440px) {
+    
+    main .cards {
+        grid-template-columns: repeat(3, 300px);
+    }
+    
+    .formFofoca {
+        width: 400px;
+        height: auto;
+    }
+
+    .contato {
+        width: 400px;
+        height: auto;
+    }
+}
+
+/* Responsividade para telas com largura máxima de 1024px*/
+/* em telas de até 1024px de largura, a tela aceitará até 3 cards por linha, os forms de criação de card e de contato tem tamanho alterado*/
+/* encontramos problemas em fazer a tela de até 1024 aceitar as configurações da tela de 1440, nos levando a fazer definições iguais, mas individuais para resolver o problema */
+@media (max-width: 1024px) {
+    
+    main .cards {
+        grid-template-columns: repeat(3, 3fr);
+    }
+    
+    .formFofoca {
+        width: 400px;
+        height: auto;
+    }
+
+    .contato {
+        width: 400px;
+        height: auto;
+    }
+}
+
+/* Responsividade para telas com largura máxima de 768px */
+/* em telas de até 768px de largura, a tela aceitará até 2 cards por linha, os forms de criação de card e de contato tem tamanho alterado, para caber na tela*/
+@media (max-width: 768px) {
+    main .cards {
+        grid-template-columns: repeat(2, 2fr);
+    }
+    
+    .formFofoca {
+        width: 300px;
+        height: auto;
+    }
+    
+    .contato {
+        width: 300px;
+        height: auto;
+    }
+}
+
+/* Responsividade para telas com largura máxima de 425px*/
+/* em telas de até 425px de largura, a tela aceitará até 1 card1 por linha, os forms de criação de card e de contato tem tamanho alterado para caber na tela, e a imagem é desabilitada*/
+@media (max-width: 375px) {
+    main .cards {
+        grid-template-columns: 1fr;
+    }
+
+    .formFofoca {
+        width: 200px;
+        height: auto;
+    }
+
+    .contato {
+        width: 200px;
+        height: auto;
+    }
+}
+
+.imagem {
+    display: none;
+    
+}
+ 
+/* em telas de até 320px de largura, a tela aceitará pouquissimo conteudo, assim que diversas áreas (main, footer, header, e section) são desabilitadas*/
+@media (max-width:320px) {
+    main *, footer *, header *, section *{
+        display:none;
+    }
+    
+    .imagem img {
+        width: 75px;
+    }
+    .imagem {
+       display: flex;
+        position: fixed;
+        left: 0;
+        top: 50%;
+        width: 100%;
+        justify-content: space-between;
+    }
+}   
